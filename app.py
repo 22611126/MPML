@@ -5,6 +5,18 @@ import numpy as np
 # Load model yang telah dilatih
 model = joblib.load('best_model.pkl')
 
+# CSS for styling with background image
+st.markdown("""
+    <style>
+    .main {
+        background-image: url('https://i.pinimg.com/originals/77/c3/ea/77c3ea242a495a7b31c4374997b11d51.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Judul aplikasi Streamlit
 st.title('Uber Fare Prediction App')
 
